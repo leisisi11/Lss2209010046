@@ -5,170 +5,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人求职简历</title>
+    <title> 雷思思求职</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            line-height: 1.6;
         }
         .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
+            margin: 20px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
-        h1, h2, h3 {
-            color: #333;
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        ul {
+        .header p {
+            margin: 5px 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-top: 15px;
+        }
+        .section ul {
             list-style-type: none;
             padding: 0;
         }
-        li {
-            margin-bottom: 10px;
-        }
-        .header, .section {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 10px;
-        }
-        .photo-container {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 150px;
-            height: 150px;
-            border: 2px dashed #ccc;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1;
-        }
-        #photo {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            display: none;
-            cursor: move;
-            position: absolute;
-        }
-        #upload-label {
-            color: #666;
-            font-size: 14px;
-            text-align: center;
-            padding: 10px;
-        }
-        #photo-input {
-            display: none;
-        }
-        .header-content {
-            margin-right: 170px; /* 给照片留出空间 */
+        .section ul li {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="photo-container">
-            <input type="file" id="photo-input" accept="image/*">
-            <label for="photo-input" id="upload-label">点击上传证件照<br>(150x150像素)</label>
-            <img id="photo" src="" alt="个人照片">
-        </div>
         <div class="header">
-            <div class="header-content">
-                <h1>个人求职简历</h1>
-                <p><strong>姓名：</strong>雷思思</p>
-                <p><strong>学号：</strong>2209010046</p>
-                <p><strong>联系方式：</strong>123-456-7890 | <a href="mailto:zhangsan@example.com">zhangsan@example.com</a></p>
-                <p><strong>地址：</strong>某某市某某区某某路123号</p>
-            </div>
+            <h1>LSS</h1>
+            <p>学号: 2209010046</p>
+            <p>姓名: 雷思思</p>
+            <p>邮箱: 309803499@qq.com | 电话: 111111 | LinkedIn: linkedin.com/in/zhouyu</p>
+        </div>
+        <div class="section">
+            <h2>求职意向</h2>
+            <p>一名拥有信息管理与信息系统专业背景的在校学生，热衷于软件开发，期望能在IT行业中找到一份实习或工作机会。</p>
         </div>
         <div class="section">
             <h2>教育背景</h2>
             <ul>
-                <li>
-                    <p><strong>某某大学</strong> - 计算机科学与技术</p>
-                    <p>本科 | 2015年9月 - 2019年6月</p>
-                    <p>主修课程：数据结构、算法设计与分析、数据库系统、计算机网络等</p>
-                </li>
+                <li><strong>湖南工商大学</strong>，信息管理与信息系统专业，本科，2013 - 至今</li>
             </ul>
         </div>
         <div class="section">
-            <h2>工作经验</h2>
+            <h2>技能简介</h2>
             <ul>
-                <li>
-                    <p><strong>某某科技有限公司</strong> - 前端开发工程师</p>
-                    <p>2019年7月 - 至今</p>
-                    <ul>
-                        <li>负责公司前端项目的开发，使用HTML5、CSS3、JavaScript等技术</li>
-                        <li>与后端团队合作，通过API接口实现前后端数据交互</li>
-                        <li>优化页面性能，提高用户体验</li>
-                        <li>参与项目需求分析、设计和编码实现</li>
-                    </ul>
-                </li>
+                <li>熟悉Java, Python等编程语言</li>
+                <li>了解SQL, NoSQL数据库</li>
+                <li>掌握基本的Agile开发方法论</li>
+                <li>具备使用Git进行版本控制的能力</li>
             </ul>
         </div>
         <div class="section">
-            <h2>技能</h2>
+            <h2>项目经验</h2>
             <ul>
-                <li>熟练掌握HTML5、CSS3、JavaScript等前端技术</li>
-                <li>熟悉React、Vue等前端框架</li>
-                <li>了解Node.js后端技术</li>
-                <li>熟练使用Git进行版本控制</li>
-                <li>具备良好的问题解决能力和团队合作精神</li>
+                <li><strong>项目 XYZ</strong> - 该项目描述及其所使用的开发技术</li>
+                <li><strong>项目 ABC</strong> - 另一个项目描述，以及所使用的开发技术</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>所获荣誉</h2>
+            <ul>
+                <li>在2020年获得某项奖项</li>
+                <li>成功带领团队提前完成项目交付</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>个人兴趣</h2>
+            <ul>
+                <li>参与开源项目贡献</li>
+                <li>阅读IT技术博客</li>
+                <li>旅游</li>
             </ul>
         </div>
     </div>
-    <script>
-        const photoInput = document.getElementById('photo-input');
-        const photo = document.getElementById('photo');
-        const uploadLabel = document.getElementById('upload-label');
-        photoInput.addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    photo.src = e.target.result;
-                    photo.style.display = 'block';
-                    uploadLabel.style.display = 'none';
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-        // 拖动功能
-        let isDragging = false;
-        let startX = 0;
-        let startY = 0;
-        let initialX = 0;
-        let initialY = 0;
-        photo.addEventListener('mousedown', function(e) {
-            isDragging = true;
-            startX = e.clientX;
-            startY = e.clientY;
-            initialX = photo.offsetLeft;
-            initialY = photo.offsetTop;
-            photo.style.cursor = 'grabbing';
-        });
-        document.addEventListener('mousemove', function(e) {
-            if (isDragging) {
-                e.preventDefault();
-                const dx = e.clientX - startX;
-                const dy = e.clientY - startY;
-                photo.style.left = initialX + dx + 'px';
-                photo.style.top = initialY + dy + 'px';
-            }
-        });
-        document.addEventListener('mouseup', function() {
-            isDragging = false;
-            photo.style.cursor = 'move';
-        });
-    </script>
 </body>
 </html>
